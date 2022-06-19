@@ -1,0 +1,34 @@
+#Ejercicio_4
+#Jesus Salvador Angulo Flores
+
+Costo_Envio = 1500
+
+Prod_Matriz = [[ 1 , "Maiz grano" , 285.55 ],
+        [ 2 , "Pepino", 334.72 ],
+        [ 3 , "Tomate verde", 129.00 ]]
+
+print("Introduce el id del producto" )
+
+ID_Producto = int (input ())
+
+if ( ID_Producto > 3 ):
+    print("No existe el id del producto")
+    SystemExit()
+else :
+    if ( ID_Producto >= 1 ):
+        ID_Producto = ID_Producto - 1
+    else :
+        print("No existe el id del producto")
+    productos_Matriz = Prod_Matriz [ ID_Producto ]
+    print ("Asigna el numero de cajas vendidas" )
+    Cajas_Vendidas = int (input ())
+    producto = productos_Matriz [ 1 ]
+    precio = int ( productos_Matriz [ 2 ])
+    if ( Cajas_Vendidas <= 100 ):
+        total = ( precio * Cajas_Vendidas + Costo_Envio )
+        print ("La venta viene siendo menor o igual a 100 cajas")
+        print("Se cobra el envio de: " + str(Costo_Envio))
+        total = ( precio * Cajas_Vendidas )
+print( "El producto es: " + producto )
+print("El precio es: " + str (precio))
+print("El total es: " + str(total))

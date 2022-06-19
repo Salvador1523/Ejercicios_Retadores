@@ -1,0 +1,17 @@
+#Ejercicio_3
+#Jesús Salvador Angulo Flores
+
+Kg_Saco_Cemento = 0
+Kg_Saco_Yeso = 0
+Limite_Maximo = 3254
+Peso = 0
+Costal_cemento=int(input("Asigna la cantidad total de costales de cemento: "))
+
+Costal_yeso = int(input("Asigna la cantidad total de costales de yeso: "))
+
+Kg_Saco_Cemento += Costal_cemento*40
+Kg_Saco_Yeso += Costal_yeso*30
+Peso += Kg_Saco_Cemento + Kg_Saco_Yeso 
+Envio = Peso >= Limite_Maximo/2 and Peso < Limite_Maximo
+print("El peso de los costales son de : ",Peso)
+print("¿Se puede realizar el envio? ",Envio)

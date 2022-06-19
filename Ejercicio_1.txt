@@ -1,0 +1,33 @@
+#Ejercicio_1
+#Jesús Salvador Angulo Flores 
+Poblacion_Hombres = 1532128
+
+Poblacion_Mujeres = 1494815
+
+Porcentaje_Mazatlan = 0
+
+Porcentaje_Culiacan = 0
+
+
+Temp_Media = 25.45
+
+Poblacion_Total = 0.0
+
+Clima_S = "seco"
+
+Clima_SH = "subhúmedo"
+
+Clima_C = "calido"
+
+Clima_SSE = "semiseco"
+
+Poblacion_Total= Poblacion_Hombres + Poblacion_Mujeres
+print("La poblacion Total del Estado de Sinaloa es: ", +Poblacion_Total)
+Poblacion_Total = Poblacion_Total *33.15
+Porcentaje_Culiacan = Poblacion_Total / 100
+print("La Poblacion de Culiacan es de: ",+Porcentaje_Culiacan)
+Poblacion_Total= Poblacion_Hombres + Poblacion_Mujeres
+Poblacion_Total = Poblacion_Total *16.57
+Porcentaje_Mazatlan = Poblacion_Total/100
+print("La Poblacion de Mazatlan es de: ",+Porcentaje_Mazatlan,)
+print("El estado de Sinaloa cuenta con una temperatura de: ",Temp_Media,"grados, ademas cuenta con diferentes tipos de climas: ",Clima_C,", ",Clima_SH,", ",Clima_S," Y ",Clima_SSE)

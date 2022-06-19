@@ -1,0 +1,13 @@
+#Ejercicio_2
+#Jesús Salvador Angulo Flores
+Promedio  = 0.0
+Variable_municipio_1= input("Escribe el nombre del municipio: ")
+Variable_de_habitantes_1= int(input ("Escribe el numero de habitantes: "))
+Variable_Municipio_2= input("Escribe el nombre de otro municipio: ")
+Variable_de_Habitantes_2= int(input ("Escribe el numero de habitantes del municipio: "))
+Variable_Municipio_3= input("Escribe el nombre del municipio: ")
+Variable_de_Habitantes_3= int(input ("Escribe el numero de habitantes del municipio: "))
+Variable_Suma= (Variable_de_habitantes_1 + Variable_de_Habitantes_2 + Variable_de_Habitantes_3)
+print(Variable_Suma)
+Promedio= Variable_Suma / 3
+print (Promedio)

@@ -1,0 +1,61 @@
+#Ejercicio_Integrador_Parte_1
+#Jesús Salvador Angulo Flores
+Venta_Productos = [
+[ 2 , 122 ],
+[ 1 , 89 ],
+[ 1 , 22 ],
+[ 3 , 48 ],
+[ 1 , 75 ],
+[ 3 , 322 ],
+[ 2 , 95 ],
+[ 1 , 148 ],
+[ 1 , 83 ],
+[ 3 , 100 ]
+]
+
+Costo_del_Envio = 1500
+
+Total_de_Cajas_Vendidas = 0
+
+Venta_del_Dia = 0
+
+Venta = 0
+
+Prod_Matriz = [[ 1 , "Maiz Grano" , 285.55 ],
+        [ 2 , "Pepino", 334.72 ],
+        [ 3 , "Tomate Verde", 129.00 ]]
+print("Asignar el ID del Producto" )
+
+ID_Producto = int (input ())
+
+if ( ID_Producto > 3 ):
+    print("No existe el producto")
+    SystemExit ()
+else :
+  
+    if ( ID_Producto >= 1 ):
+        ID_Producto = ID_Producto - 1
+    else :
+      
+        print("No existe el producto")
+    productos_Matriz = Prod_Matriz [   ID_Producto ]
+    producto = productos_Matriz [ 1 ]
+    precio = productos_Matriz [ 2 ]
+    print( "El nombre del producto es: " + producto )
+    print ("El precio por cada caja es de: " + str (precio))
+  
+    ID_Producto = ID_Producto + 1
+    for n in Venta_Productos :
+        if ( int ( n [ 0 ]) == ID_Producto ):
+            Cajas_Vendidas = int ( n [ 1 ])
+            Total_de_Cajas_Vendidas = Total_de_Cajas_Vendidas + Cajas_Vendidas
+            if ( Cajas_Vendidas <= 100 ):
+                venta_total_cajas = ( Cajas_Vendidas * precio + Costo_del_Envio )
+            else :
+                Total_de_Cajas_Vendidas = ( Cajas_Vendidas * precio )
+
+if ( Total_de_Cajas_Vendidas > 1500 ):
+    print( "Aplica descuento del 20%" )
+else :
+    print("No aplica descuento del 20%" )
+print("El costo total a pagar:" + str(venta_total_cajas))
